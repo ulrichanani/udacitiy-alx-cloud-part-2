@@ -32,7 +32,7 @@ import { filterImageFromURL, deleteLocalFiles, requireAuth } from "./util/util";
 
   app.get(
     "/filteredimage",
-    requireAuth,
+    // requireAuth,
     async (req: Request, res: Response) => {
       const imageUrl: string = req.query.image_url;
 
